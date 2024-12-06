@@ -57,7 +57,7 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 2>;
+            if-layers = <0 2>;
             then-layer = <3>;
         };
     };
@@ -65,21 +65,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            bindings = <
-&kp Q  &kp W       &kp F        &kp P       &kp B         &kp J      &kp L       &kp U        &kp Y       &kp SQT
-&kp A  &ht LALT R  &ht LCTRL S  &ht LGUI T  &kp G         &kp M      &ht RGUI N  &ht RCTRL E  &ht RALT I  &kp O
-&kp Z  &kp X       &kp C        &kp D       &kp V         &kp K      &kp H       &kp COMMA    &kp DOT     &kp SLASH
-                                &lt 2 TAB   &kp LSHIFT    &kp SPACE  &lt 1 TAB
-            >;
-        };
-
         right_layer {
             bindings = <
 &kp N1    &kp N2        &kp N3     &kp N4          &kp N5       &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
 &kp DEL   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp BACKSPACE
 &kp CAPS  &kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LC(V)    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp ENTER
                                    &trans          &kp ESC      &trans    &trans
+            >;
+        };
+
+        default_layer {
+            bindings = <
+&kp Q  &kp W       &kp F        &kp P       &kp B         &kp J      &kp L       &kp U        &kp Y           &kp SQT
+&kp A  &ht LALT R  &ht LCTRL S  &ht LGUI T  &kp G         &kp M      &ht RGUI N  &ht RCTRL E  &ht LEFT_ALT I  &kp O
+&kp Z  &kp X       &kp C        &kp D       &kp V         &kp K      &kp H       &kp COMMA    &kp DOT         &kp SLASH
+                                &lt 2 TAB   &kp LSHIFT    &kp SPACE  &lt 0 TAB
             >;
         };
 
@@ -94,7 +94,7 @@
 
         tri_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog 0  &kp C_MUTE    &kp C_PREV
+&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog 1  &kp C_MUTE    &kp C_PREV
 &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &trans  &kp C_VOL_UP  &kp C_PP
 &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans  &kp C_VOL_DN  &kp C_NEXT
                           &trans   &trans          &trans        &trans
