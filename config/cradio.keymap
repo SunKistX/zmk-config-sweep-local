@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W       &kp F        &kp P       &kp B         &kp J      &kp L       &kp U        &kp Y           &kp SQT
-&kp A  &ht LALT R  &ht LCTRL S  &ht LGUI T  &kp G         &kp M      &ht RGUI N  &ht RCTRL E  &ht LEFT_ALT I  &kp O
-&kp Z  &kp X       &kp C        &kp D       &kp V         &kp K      &kp H       &kp COMMA    &kp DOT         &kp SLASH
-                                &lt 1 TAB   &kp LSHIFT    &kp SPACE  &lt 2 TAB
+&kp Q  &kp W       &kp F        &kp P       &kp B         &kp J        &kp L       &kp U        &kp Y           &kp SQT
+&kp A  &ht LALT R  &ht LCTRL S  &ht LGUI T  &kp G         &kp M        &ht RGUI N  &ht RCTRL E  &ht LEFT_ALT I  &kp O
+&kp Z  &kp X       &kp C        &kp D       &kp V         &kp K        &kp H       &kp COMMA    &kp DOT         &kp SLASH
+                                &lt 2 TAB   &kp LSHIFT    &lt 3 SPACE  &lt 1 TAB
             >;
         };
 
@@ -94,9 +94,9 @@
 
         tri_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog 0  &kp C_MUTE    &kp C_PREV
-&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &trans  &kp C_VOL_UP  &kp C_PP
-&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans  &kp C_VOL_DN  &kp C_NEXT
+&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog 0       &kp C_MUTE    &kp C_PREV
+&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &bootloader  &kp C_VOL_UP  &kp C_PP
+&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans       &kp C_VOL_DN  &kp C_NEXT
                           &trans   &trans          &trans        &trans
             >;
         };
