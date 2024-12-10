@@ -49,8 +49,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <RIG LEF>;
-            then-layer = <TRI>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
