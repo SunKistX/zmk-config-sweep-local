@@ -71,7 +71,7 @@
 &kp Q  &kp W       &kp F       &kp P        &kp B        &kp J      &kp L        &kp U       &kp Y       &kp SQT
 &kp A  &ht LALT R  &ht LGUI S  &ht LCTRL T  &kp G        &kp M      &ht RCTRL N  &ht RGUI E  &ht RALT I  &kp O
 &kp Z  &kp X       &kp C       &kp D        &kp V        &kp K      &kp H        &kp COMMA   &kp DOT     &kp SLASH
-                               &lt LEF TAB  &kp SPACE    &kp LSHFT  &lt RIG TAB
+                               &lt LEF TAB  &kp LSHFT    &kp SPACE  &lt RIG TAB
             >;
         };
 
