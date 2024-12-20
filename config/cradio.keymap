@@ -35,6 +35,14 @@
             bindings = <&kp>, <&kp>;
         };
 
+        sk: sk {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <500>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <300>;    // 40
