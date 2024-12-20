@@ -98,9 +98,9 @@
 
         tri_layer {
             bindings = <
-&kp CAPS  &none  &out OUT_USB  &bt BT_SEL 2  &bt BT_SEL 0    &none   &none          &tog WIN        &kp C_MUTE    &kp C_PREV
+&kp CAPS  &none  &out OUT_USB  &bt BT_SEL 2  &bt BT_SEL 0    &none   &none          &none           &kp C_MUTE    &kp C_PREV
 &none     &none  &out OUT_BLE  &bt BT_SEL 3  &bt BT_SEL 1    &none   &kp C_BRI_UP   &studio_unlock  &kp C_VOL_UP  &kp C_PP
-&none     &none  &out OUT_TOG  &bt BT_SEL 4  &bt BT_CLR      &none   &kp C_BRI_DEC  &none           &kp C_VOL_DN  &kp C_NEXT
+&tog 1    &none  &out OUT_TOG  &bt BT_SEL 4  &bt BT_CLR      &none   &kp C_BRI_DEC  &none           &kp C_VOL_DN  &kp C_NEXT
                                &trans        &trans          &trans  &trans
             >;
         };
