@@ -71,10 +71,10 @@
 
         windows_layer {
             bindings = <
-&kp Q           &kp W        &kp F       &kp P        &kp B        &kp J      &kp L        &kp U       &kp Y        &kp SQT
-&mt LEFT_ALT A  &ht LCTRL R  &ht LGUI S  &kp T        &kp G        &kp M      &kp N        &ht RGUI E  &ht RCTRL I  &mt LALT O
-&kp Z           &kp X        &kp C       &kp D        &kp V        &kp K      &kp H        &kp COMMA   &kp DOT      &kp SLASH
-                                         &lt LEF TAB  &kp LSHFT    &kp SPACE  &lt RIG TAB
+&kp Q  &kp W  &kp F  &kp P        &kp B        &kp J      &kp L        &kp U      &kp Y        &kp SQT
+&kp A  &kp R  &kp S  &kp T        &kp G        &kp M      &kp N        &kp E      &ht RCTRL I  &kp O
+&kp Z  &kp X  &kp C  &kp D        &kp V        &kp K      &kp H        &kp COMMA  &kp DOT      &kp SLASH
+                     &lt LEF TAB  &kp LSHFT    &kp SPACE  &lt RIG TAB
             >;
         };
 
