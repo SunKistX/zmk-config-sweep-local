@@ -22,7 +22,10 @@
 
 / {
     chosen { zmk,charmap = &charmap_us; };
-
+    &sk {
+    	// don't release mods on other mods presses
+    	ignore-modifiers;
+    };
     behaviors {
         ht: hold_tap {
             label = "hold_tap";
