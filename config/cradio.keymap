@@ -17,6 +17,18 @@
 #define LEF 3
 #define TRI 4
 #define MOUSE 5
+// Define custom behaviors
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;    // Adjust this value to change tap timing
+    quick-tap-ms = <150>;       // Tap-twice-quickly timing
+    hold-trigger-key-positions = <0>;  // Trigger hold immediately when pressing other keys
+};
+
+&sk {
+    release-after-ms = <2000>;  // Sticky key timeout
+    quick-release;              // Release sticky key on next key press
+};
 
 / {
     chosen { zmk,charmap = &charmap_us; };
@@ -54,6 +66,30 @@
             acceleration-exponent = <0>;      // 0
             time-to-max-speed-ms = <40>;      // 500
             delay-ms = <0>;                   // 10
+        };
+        combos {
+        
+            compatible = "zmk,combos";
+        
+            // Example: Press Q+W for Escape
+            combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+        
+        // Example: Press F+P for Tab
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp TAB>;
+        };
+
+        // Example: Press A+S for Sticky Shift
+        combo_sticky_shift {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&sk LSHFT>;
         };
     };
 
